@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="5" failures="0" name="FelineTest" time="0.356" errors="0" skipped="0">
+  <properties>
+    <property name="idea.version" value="2023.1.4"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="18.0.2.1+1-1"/>
+    <property name="sun.boot.library.path" value="C:\Users\Дмитрий\.jdks\openjdk-18.0.2.1\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\projects\sprint_6\qa_java"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\projects\sprint_6\qa_java"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="18.0.2.1+1-1"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\AACE~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="maven.ext.class.path" value="D:\intellij\IntelliJ IDEA Community Edition 2023.1.4\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="D:\intellij\IntelliJ IDEA Community Edition 2023.1.4\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.library.path" value="C:\Users\Дмитрий\.jdks\openjdk-18.0.2.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Amazon Corretto\jdk11.0.20_8\bin;C:\apache-maven-3.9.3\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\chromedriver;C:\Program Files (x86)\dotnet\;C:\Program Files (x86)\Sennheiser\SenncomSDK\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;D:\Python\Scripts\;D:\Python\;C:\Users\Дмитрий\AppData\Local\Microsoft\WindowsApps;;D:\PyCharm\PyCharm Community Edition 2022.2\bin;;C:\Users\Дмитрий\.dotnet\tools;D:\intellij\IntelliJ IDEA Community Edition 2022.2.1\bin;;."/>
+    <property name="jansi.passthrough" value="true"/>
+    <property name="maven.conf" value="D:\intellij\IntelliJ IDEA Community Edition 2023.1.4\plugins\maven\lib\maven3/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="62.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\Дмитрий"/>
+    <property name="user.timezone" value="Europe/Moscow"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="18"/>
+    <property name="user.name" value="Дмитрий"/>
+    <property name="java.class.path" value="D:\intellij\IntelliJ IDEA Community Edition 2023.1.4\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;D:\intellij\IntelliJ IDEA Community Edition 2023.1.4\plugins\maven\lib\maven3\boot\plexus-classworlds.license"/>
+    <property name="java.vm.specification.version" value="18"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2023.1.4 verify"/>
+    <property name="java.home" value="C:\Users\Дмитрий\.jdks\openjdk-18.0.2.1"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="18.0.2.1"/>
+    <property name="native.encoding" value="Cp1251"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="sun.stderr.encoding" value="UTF-8"/>
+    <property name="maven.home" value="D:\intellij\IntelliJ IDEA Community Edition 2023.1.4\plugins\maven\lib\maven3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2022-08-18"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.stdout.encoding" value="UTF-8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="FelineTest" name="getFoodTest" time="0.307"/>
+  <testcase classname="FelineTest" name="getKittensSingleTest" time="0"/>
+  <testcase classname="FelineTest" name="getKittensplentyIntTest" time="0.047"/>
+  <testcase classname="FelineTest" name="getFamilyTest" time="0.001"/>
+  <testcase classname="FelineTest" name="getEatMeatTest" time="0.001"/>
+</testsuite>
