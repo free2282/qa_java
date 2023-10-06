@@ -1,22 +1,24 @@
 import com.example.Feline;
 import com.example.Lion;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.Spy;
 
 import java.util.List;
 
 
 public class LionTest
 {
-    private final Feline feline = new Feline();
-    private final Lion lion = new Lion(feline, "Самец");
-    public LionTest() throws Exception
-    {
-    }
+    @Spy
+    private Feline feline = new Feline();
 
     @Test
     public void getFoodTest() throws Exception
     {
+        Lion lion = new Lion(feline, "Самец");
         var actual = lion.getFood();
         var expected = List.of("Животные", "Птицы", "Рыба");
 
@@ -24,26 +26,24 @@ public class LionTest
     }
 
     @Test
-    public void getKitchenSingleTest()
-    {
+    public void getKitchenSingleTest() throws Exception {
+        Lion lion = new Lion(feline, "Самец");
         int actual = lion.getKittens();
         int expected = 1;
 
         Assert.assertEquals(expected, actual);
     }
-
     @Test
-    public void sexErrorTest()
+    public void maleErrorTest()
     {
-        try
+        Exception exception = Assert.assertThrows(Exception.class, () ->
         {
-            new Lion(feline,"Не выбрано");
-        }
-        catch (Exception e)
-        {
-            String actual = e.getMessage();
-            String expected = "Используйте допустимые значения пола животного - самей или самка";
-            Assert.assertTrue(actual.contains(expected));
-        }
+            new Lion(feline,"Оно");
+        });
+
+        String expectedMessage = "Используйте допустимые значения пола животного - самей или самка";
+        String actualMessage = exception.getMessage();
+
+        Assert.assertEquals(expectedMessage, actualMessage);
     }
 }

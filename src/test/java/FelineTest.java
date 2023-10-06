@@ -4,6 +4,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
+import org.mockito.Spy;
 import org.mockito.junit.MockitoJUnitRunner;
 
 import java.util.List;
@@ -12,13 +13,12 @@ import java.util.List;
 public class FelineTest
 {
 
-    @Mock
-    Feline feline;
+    @Spy
+    Feline feline = new Feline();
 
     @Test
     public void getKittensSingleTest()
     {
-        Feline feline = new Feline();
         int actual = feline.getKittens();
         int expected = 1;
 
@@ -38,7 +38,6 @@ public class FelineTest
     @Test
     public void getFamilyTest()
     {
-        Feline feline = new Feline();
         var actual = feline.getFamily();
         var expected = "Кошачьи";
 
@@ -48,7 +47,6 @@ public class FelineTest
     @Test
     public void getEatMeatTest() throws Exception
     {
-        Mockito.when(feline.eatMeat()).thenReturn(List.of("Животные", "Птицы", "Рыба"));
         var actual = feline.eatMeat();
         var expected = List.of("Животные", "Птицы", "Рыба");
 
@@ -58,8 +56,9 @@ public class FelineTest
     @Test
     public void getFoodTest() throws Exception
     {
-        Feline feline = new Feline();
+
         var actual = feline.eatMeat();
+        System.out.println(actual);
         var expected = List.of("Животные", "Птицы", "Рыба");
 
         Assert.assertEquals(expected, actual);
