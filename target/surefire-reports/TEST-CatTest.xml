@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="CatTest" time="0.798" errors="0" skipped="0">
+<testsuite tests="2" failures="0" name="CatTest" time="1.218" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2023.1.4"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -63,6 +63,6 @@
     <property name="sun.stdout.encoding" value="UTF-8"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="CatTest" name="getFoodTest" time="0.797"/>
-  <testcase classname="CatTest" name="getSoundTest" time="0.001"/>
+  <testcase classname="CatTest" name="getFoodTest" time="1.218"/>
+  <testcase classname="CatTest" name="getSoundTest" time="0"/>
 </testsuite>
