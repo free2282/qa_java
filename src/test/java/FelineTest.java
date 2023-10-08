@@ -12,8 +12,6 @@ import java.util.List;
 @RunWith(MockitoJUnitRunner.class)
 public class FelineTest
 {
-
-    @Spy
     Feline feline = new Feline();
 
     @Test
@@ -26,13 +24,12 @@ public class FelineTest
     }
 
     @Test
-    public void getKittensplentyIntTest()
+    public void getKittens5ValueTest()
     {
-        int kittens = Mockito.anyInt();
-        Mockito.when(feline.getKittens(kittens)).thenReturn(kittens);
-        int actual = feline.getKittens(kittens);
+        int kittensExpected = 5;
+        int kittensActual = feline.getKittens(kittensExpected);
 
-        Assert.assertEquals(kittens, actual);
+        Assert.assertEquals(kittensExpected, kittensActual);
     }
 
     @Test

@@ -12,8 +12,8 @@ import java.util.List;
 
 public class LionTest
 {
-    @Spy
-    private Feline feline = new Feline();
+    @Mock
+    Feline feline = new Feline();
 
     @Test
     public void getFoodTest() throws Exception

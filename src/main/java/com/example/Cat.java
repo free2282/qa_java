@@ -6,7 +6,7 @@ public class Cat
 {
 
     private final Predator predator;
-
+    //private final Feline feline;
     public Cat(Feline feline)
     {
         this.predator = feline;
