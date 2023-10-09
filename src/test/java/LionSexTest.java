@@ -35,6 +35,6 @@ public class LionSexTest
         Lion lion = new Lion(feline, sex);
         var actual = lion.doesHaveMane();
 
-        Assert.assertEquals(actual, expected);
+        Assert.assertEquals(expected, actual);
     }
 }
