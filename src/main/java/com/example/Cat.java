@@ -2,19 +2,23 @@ package com.example;
 
 import java.util.List;
 
-public class Cat {
+public class Cat
+{
 
-    Predator predator;
-
-    public Cat(Feline feline) {
+    private final Predator predator;
+    //private final Feline feline;
+    public Cat(Feline feline)
+    {
         this.predator = feline;
     }
 
-    public String getSound() {
+    public String getSound()
+    {
         return "Мяу";
     }
 
-    public List<String> getFood() throws Exception {
+    public List<String> getFood() throws Exception
+    {
         return predator.eatMeat();
     }
 
